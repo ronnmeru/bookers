@@ -1,0 +1,22 @@
+<div class="color"><%= flash[:notice]%></div>
+<div class="color"><%= flash[:update]%></div>
+
+<table>
+  <tbody>
+  <tr>
+  <td><h4>title:</h4></td>
+  <td><%= @book.title %></td>
+  </tr>
+  </tbody>
+  <tbody>
+  <tr>
+  <td><h4>body:</h4><td>
+  <td><%=@book.body %><td>
+  </tr>
+  </tbody>
+</table>
+
+
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Back", books_path %>
+
